@@ -1,5 +1,5 @@
 CPPFLAGS=-std=c++14 -Wall 
-CC=g++
+CC=/usr/local/gcc-8.2/bin/g++-8.2
 
 all: src/pointers.cpp
 	@$(CC) $(CPPFLAGS) -o bin/pointers.out src/pointers.cpp  

@@ -2,17 +2,20 @@
 
 using namespace std;
 
-void myswap(int * ptr1, int* ptr2)
+void myswap(int &a , int &b)
 {
-  auto temp = ptr1;
-  ptr1 = ptr2;
-  ptr2 = temp;
+    int *ptr1 = &a;
+    int *ptr2= &b;
+  auto temp = *ptr1;
+  *ptr1 = *ptr2;
+  *ptr2 = temp;
 }
 
 
 int main()
 {
-  int a = 25, b = 11;    
+  int a = 25, b = 11;
+    
 
   cout<<"What am I doing wrong ☹ \n\n";
 
